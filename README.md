@@ -69,13 +69,13 @@ We also need to install the management packs in the correct order (**TAP** first
 ### Installing the TAP Management Pack
 1. Login to Aria Operations 
 2. Go to **Data Sources** > **Integrations** and then click on the **Repository** tab
-3. Click the **add** button in order to add the management pack
+3. Click the **add** button in order to add the management pack  
 ![add interation](./images/1.png)
 4. Select the Management Pack file from your filesystem and click **upload**
 ![upload pak file](./images/2.png)
 5. Click **next** once uploaded
 ![next](./images/3.png)
-6. Confirm the installation of an unsigned management pack
+6. Confirm the installation of an unsigned management pack  
 ![unsigned confirmation](./images/4.png)
 7. Accept the EULA and click next
 ![eula](./images/5.png)
@@ -85,13 +85,13 @@ We also need to install the management packs in the correct order (**TAP** first
 ## Installing the TAP Run Profile Management Pack
 1. Login to Aria Operations 
 2. Go to **Data Sources** > **Integrations** and then click on the **Repository** tab
-3. Click the **add** button in order to add the management pack
+3. Click the **add** button in order to add the management pack  
 ![add interation](./images/1.png)
 4. Select the Management Pack file from your filesystem and click **upload**
 ![upload pak file](./images/7.png)
 5. Click **next** once uploaded
 ![next](./images/8.png)
-6. Confirm the installation of an unsigned management pack
+6. Confirm the installation of an unsigned management pack  
 ![unsigned confirmation](./images/4.png)
 7. Accept the EULA and click next
 ![eula](./images/5.png)
@@ -104,16 +104,16 @@ Now that the management packs have been added, we can start adding our TAP clust
 ### Adding a Full, Iterate or Build cluster
 1.  Login to Aria Operations 
 2. Go to **Data Sources** > **Integrations** and then click on the **Repository** tab
-3. Find the **TAP** Management Pack and click on **ADD ACCOUNT**
+3. Find the **TAP** Management Pack and click on **ADD ACCOUNT**  
 ![](./images/10.png)
-4. Fill out the name of the cluster and the IP/FQDN of the kubernetes cluster
+4. Fill out the name of the cluster and the IP/FQDN of the kubernetes cluster  
 ![](./images/11.png)
-5. Click the **+** symbol next to **credentials** and add a new credential where the name can be anything, and the value should be the token retrieved previously
+5. Click the **+** symbol next to **credentials** and add a new credential where the name can be anything, and the value should be the token retrieved previously  
 ![](./images/12.png)
-6. Validate the connection
+6. Validate the connection  
 ![](./images/13.png)
 ![](./images/14.png)
-7. Add the cluster
+7. Add the cluster  
 ![](./images/15.png)
 
 You can repeat this for as many Full, Build or Iterate clusters you want to connect.
@@ -121,16 +121,16 @@ You can repeat this for as many Full, Build or Iterate clusters you want to conn
 ### Adding a Run cluster
 1.  Login to Aria Operations 
 2. Go to **Data Sources** > **Integrations** and then click on the **Repository** tab
-3. Find the **TAP Run Profile** Management Pack and click on **ADD ACCOUNT**
+3. Find the **TAP Run Profile** Management Pack and click on **ADD ACCOUNT**  
 ![](./images/16.png)
-4. Fill out the name of the cluster and the IP/FQDN of the kubernetes cluster
+4. Fill out the name of the cluster and the IP/FQDN of the kubernetes cluster  
 ![](./images/17.png)
-5. Click the **+** symbol next to **credentials** and add a new credential where the name can be anything, and the value should be the token retrieved previously
+5. Click the **+** symbol next to **credentials** and add a new credential where the name can be anything, and the value should be the token retrieved previously  
 ![](./images/18.png)
-6. Validate the connection
+6. Validate the connection  
 ![](./images/19.png)
 ![](./images/20.png)
-7. Add the cluster
+7. Add the cluster  
 ![](./images/21.png)
 
 You can repeat this for as many Run clusters you want to connect.
@@ -139,26 +139,26 @@ You can repeat this for as many Run clusters you want to connect.
 **NOTE :** After adding an adapter instance to Aria Operations, you will need to wait a few minutes (5-10 minutes or so) untill the system collects all the data and starts visualizing the resources with populated data.
 
 ### Viewing all the object types collected
-1. Go to **Environment** > **Object Browser** and then open the **All Objects** section and find the **TAP** section
+1. Go to **Environment** > **Object Browser** and then open the **All Objects** section and find the **TAP** section  
 ![](./images/22.png)
-2. For Run profile clusters, the resources collected can be found under the **TAP Run Profile** section
+2. For Run profile clusters, the resources collected can be found under the **TAP Run Profile** section  
 ![](./images/23.png)
 
 ## Viewing the Provided Dashboard
 As part of the management pack a Dashboard has been added giving a drill down approach from your workloads throughout the relevant resources till the running app itself.
 
 ### Finding the dashboard
-Go to **Visualize** > **Dashboards** and then click on the **all** section and search for "**TAP Multi Cluster Workload Overview**"
+Go to **Visualize** > **Dashboards** and then click on the **all** section and search for "**TAP Multi Cluster Workload Overview**"  
 ![](./images/24.png)
 
 ### What does the dashboard provide us
-1. The dashboard starts by providing a list of workloads from all attached clusters and based on the one selected will show the relationship graph with other resources right bellow it
+1. The dashboard starts by providing a list of workloads from all attached clusters and based on the one selected will show the relationship graph with other resources right bellow it  
 ![](./images/25.png)
-2. We then can scroll down and see the Source Repository details of our workload as well as a list of Test runs. if you select a relevant test run, the details of that run will show on the right. Bellow this we see the Source Scan status, TBS image details, and a list of image builds which when one is selected will show us build information in the table bellow it.
+2. We then can scroll down and see the Source Repository details of our workload as well as a list of Test runs. if you select a relevant test run, the details of that run will show on the right. Bellow this we see the Source Scan status, TBS image details, and a list of image builds which when one is selected will show us build information in the table bellow it.  
 ![](./images/26.png)
-3. We then can scroll down and see the image scan details for our image and select the relevant config writer from the provided list in order to see its details on the right. We then bellow that have the list of all deliverables, accross all atached clusters, which are derived from this workload. When a deliverable is selected, the details of this deliverable is provided on the right hand table.
+3. We then can scroll down and see the image scan details for our image and select the relevant config writer from the provided list in order to see its details on the right. We then bellow that have the list of all deliverables, accross all atached clusters, which are derived from this workload. When a deliverable is selected, the details of this deliverable is provided on the right hand table.  
 ![](./images/27.png)
-4. Finally we have the Relationship graph of the selected deliverable
+4. Finally we have the Relationship graph of the selected deliverable  
 ![](./images/28.png)
 
 ## Current limitations
