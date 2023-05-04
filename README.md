@@ -158,8 +158,10 @@ Go to **Visualize** > **Dashboards** and then click on the **all** section and s
 ![](./images/26.png)
 3. We then can scroll down and see the image scan details for our image and select the relevant config writer from the provided list in order to see its details on the right. We then bellow that have the list of all deliverables, accross all atached clusters, which are derived from this workload. When a deliverable is selected, the details of this deliverable is provided on the right hand table.  
 ![](./images/27.png)
-4. Finally we have the Relationship graph of the selected deliverable  
+4. Now we have the Relationship graph of the selected deliverable  
 ![](./images/28.png)
+5. Finally we have a selection of the deliverable sources and provide data about the source, the kapp application used to install the app, and finally a list of the resources created by the deliverable with a metric/property picker and metric chart module to visualize the data of the relevant runtime resources.  
+![](./images/29.png)
 
 ## Current limitations
 1. Pagination is not handled yet. if you have more then 1000 workloads in a cluster, you will not see all resources.
