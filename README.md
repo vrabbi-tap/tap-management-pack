@@ -162,7 +162,12 @@ Go to **Visualize** > **Dashboards** and then click on the **all** section and s
 ![](./images/28.png)
 
 ## Current limitations
-1. Pagination is not handled yet. if you have more then 100 workloads, you will not see all resources.
-2. Image Repository and Maven Artifact based workloads will not show all the information as those resources have not been implemented yet.
-3. Kaniko builds will not show up currently as that has not been implemented yet.
-4. No visibility of auxilary resources such as Service Bindings, API Descriptors, App SSO, Spring Gloud Gateway etc. as these have not been implemented yet
+1. Pagination is not handled yet. if you have more then 1000 workloads in a cluster, you will not see all resources.
+2. The following TAP workload resources are not currently collected:
+* Maven Artifact Source
+* Kaniko Builds
+* Service Bindings
+* App SSO
+* SCG + ACS
+* API Descriptors
+* Pod Intent
